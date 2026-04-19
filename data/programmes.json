@@ -1,0 +1,101 @@
+[
+  {
+    "slug": "data-analytics-bootcamp",
+    "title": "Data Analytics Bootcamp",
+    "shortDescription": "Hands-on analytics, dashboards, and decision intelligence for modern teams.",
+    "fullDescription": "An intensive programme designed for professionals who want to turn raw data into strategic insights using modern analytics workflows and BI tooling.",
+    "category": "IT",
+    "duration": "12 weeks",
+    "nqfLevel": "5",
+    "credits": 42,
+    "outcomes": [
+      "Build end-to-end dashboards",
+      "Clean and model business data",
+      "Present decision-ready insights"
+    ],
+    "requirements": [
+      "Basic computer literacy",
+      "Comfort with spreadsheets",
+      "Minimum Grade 12"
+    ],
+    "certification": "LIMCO Certificate of Competence + portfolio assessment",
+    "featured": true
+  },
+  {
+    "slug": "project-finance-foundations",
+    "title": "Project Finance Foundations",
+    "shortDescription": "Core financial modelling and funding strategy for infrastructure and growth projects.",
+    "fullDescription": "Develop practical finance skills for planning, funding, and evaluating projects with confidence, including risk and return modelling.",
+    "category": "Finance",
+    "duration": "8 weeks",
+    "nqfLevel": "6",
+    "credits": 24,
+    "outcomes": [
+      "Model project cashflows",
+      "Interpret cost of capital",
+      "Assess investment viability"
+    ],
+    "requirements": [
+      "Numerical literacy",
+      "Exposure to budgeting preferred"
+    ],
+    "certification": "Accredited statement of results"
+  },
+  {
+    "slug": "regulatory-compliance-masterclass",
+    "title": "Regulatory Compliance Masterclass",
+    "shortDescription": "Build robust compliance cultures aligned to South African and global standards.",
+    "fullDescription": "This programme equips compliance officers and managers to map obligations, manage audits, and implement practical governance controls.",
+    "category": "Compliance",
+    "duration": "6 weeks",
+    "outcomes": [
+      "Design compliance frameworks",
+      "Run internal readiness assessments",
+      "Build actionable remediation plans"
+    ],
+    "requirements": [
+      "Relevant work experience",
+      "Manager recommendation"
+    ],
+    "certification": "Professional attendance and competency certificate"
+  },
+  {
+    "slug": "strategic-leadership-executive",
+    "title": "Strategic Leadership Executive Programme",
+    "shortDescription": "Lead transformation with strategic clarity, communication, and execution discipline.",
+    "fullDescription": "A premium executive learning track focused on strategic direction, leading people through change, and creating measurable business impact.",
+    "category": "Leadership",
+    "duration": "10 weeks",
+    "nqfLevel": "7",
+    "credits": 30,
+    "outcomes": [
+      "Set strategy and operating rhythms",
+      "Lead high-performing teams",
+      "Measure transformation outcomes"
+    ],
+    "requirements": [
+      "3+ years management experience",
+      "Leadership interview"
+    ],
+    "certification": "Executive leadership credential"
+  },
+  {
+    "slug": "business-process-optimization",
+    "title": "Business Process Optimization",
+    "shortDescription": "Redesign operational workflows for efficiency, quality, and scalable growth.",
+    "fullDescription": "Learn to audit current operations, eliminate friction, and establish measurable service excellence across teams.",
+    "category": "Business",
+    "duration": "5 weeks",
+    "nqfLevel": "5",
+    "credits": 18,
+    "outcomes": [
+      "Map and improve process flows",
+      "Identify bottlenecks and waste",
+      "Implement KPI-driven improvements"
+    ],
+    "requirements": [
+      "Operational role exposure"
+    ],
+    "certification": "Operational excellence certificate"
+  }
+]
