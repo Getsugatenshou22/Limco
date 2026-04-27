@@ -33,7 +33,7 @@ export type GalleryItem = {
 export const navLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
-  { href: "/programs", label: "Programmes" },
+  { href: "/programmes", label: "Programmes" },
   { href: "/gallery", label: "Gallery" },
   { href: "/services", label: "Services" },
   { href: "/apply", label: "Apply" },
