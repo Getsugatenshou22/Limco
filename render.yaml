@@ -3,7 +3,7 @@ services:
     name: limco
     runtime: node
     plan: free
-    buildCommand: npm install --include=dev && npm run build
+    buildCommand: npm install --include=dev && npm run build:render
     startCommand: npm run start
     envVars:
       - key: NODE_VERSION
