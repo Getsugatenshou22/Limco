@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Limco Consulting and Management Pty. Ltd.</title>
+  <meta name="description" content="Limco Consulting and Management provides skills development, learnerships, internships, workplace placements and accredited training solutions in South Africa.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    :root {
+      --navy: #0b1f3b;
+      --navy-soft: #13315c;
+      --gold: #f5c542;
+      --gold-deep: #d8a827;
+      --mist: #f4f7fb;
+      --slate: #5f6f86;
+      --ink: #1b2430;
+      --border: #d8e0ea;
+      --white: #ffffff;
+      --shadow: 0 18px 36px rgba(11, 31, 59, 0.08);
+      --radius: 18px;
+      --radius-sm: 12px;
+      --max: 1180px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Inter", Arial, sans-serif;
+      color: var(--ink);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    .shell {
+      width: min(calc(100% - 2rem), var(--max));
+      margin: 0 auto;
+    }
+
+    .section {
+      padding: 5rem 0;
+    }
+
+    .section.alt {
+      background: var(--mist);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 0.85rem;
+      color: var(--navy-soft);
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      color: var(--navy);
+      line-height: 1.15;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 5vw, 4.6rem);
+      font-weight: 800;
+    }
+
+    h2 {
+      font-size: clamp(1.9rem, 3vw, 2.8rem);
+      font-weight: 800;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+
+    h4 {
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    h5 {
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    p {
+      color: var(--slate);
+    }
+
+    header {
+      position: relative;
+      min-height: 100vh;
+      color: var(--white);
+      background:
+        linear-gradient(135deg, rgba(11, 31, 59, 0.92), rgba(19, 49, 92, 0.8)),
+        url("C:/Users/B/Downloads/Limco Gallery/49.jpeg") center/cover no-repeat;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      width: 100%;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      background: rgba(11, 31, 59, 0.72);
+      backdrop-filter: blur(12px);
+    }
+
+    nav.black {
+      background: rgba(11, 31, 59, 0.96);
+    }
+
+    .nav-shell {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 0.9rem 0;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.9rem;
+      min-width: 0;
+    }
+
+    .brand img {
+      width: 220px;
+      max-width: 48vw;
+      background: rgba(255, 255, 255, 0.96);
+      border-radius: 10px;
+      padding: 0.35rem 0.55rem;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .nav-links ul {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+      list-style: none;
+      padding: 0;
+    }
+
+    .nav-links li a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 42px;
+      padding: 0.65rem 0.9rem;
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 0.94rem;
+      font-weight: 600;
+      border-radius: 999px;
+      transition: background-color 0.2s ease, color 0.2s ease;
+    }
+
+    .nav-links li a:hover,
+    .nav-links li a:focus-visible,
+    .nav-links li a.active {
+      color: var(--white);
+      background: rgba(255, 255, 255, 0.12);
+    }
+
+    .nav-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0.8rem 1.15rem;
+      color: var(--navy);
+      font-weight: 700;
+      background: var(--gold);
+      border-radius: 999px;
+      transition: transform 0.2s ease, background-color 0.2s ease;
+    }
+
+    .nav-cta:hover,
+    .nav-cta:focus-visible {
+      background: #ffd767;
+      transform: translateY(-1px);
+    }
+
+    .menu-toggle,
+    .menu-close {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      border: 0;
+      color: var(--white);
+      background: transparent;
+      cursor: pointer;
+    }
+
+    #home {
+      display: flex;
+      align-items: center;
+      min-height: calc(100vh - 85px);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+      gap: 2rem;
+      align-items: end;
+      padding: 4rem 0 5rem;
+    }
+
+    .hero-copy p {
+      max-width: 700px;
+      margin-top: 1.2rem;
+      color: rgba(255, 255, 255, 0.86);
+      font-size: 1.08rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.85rem;
+      margin-top: 1.6rem;
+    }
+
+    .btn-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0.95rem 1.3rem;
+      font-weight: 700;
+      border-radius: 999px;
+      transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+    }
+
+    .btn-link.yellow {
+      color: var(--navy);
+      background: var(--gold);
+    }
+
+    .btn-link.yellow:hover,
+    .btn-link.yellow:focus-visible {
+      background: #ffd767;
+      transform: translateY(-1px);
+    }
+
+    .btn-link.ghost {
+      color: var(--white);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .btn-link.ghost:hover,
+    .btn-link.ghost:focus-visible {
+      background: rgba(255, 255, 255, 0.15);
+      transform: translateY(-1px);
+    }
+
+    .hero-aside {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .hero-card {
+      padding: 1.3rem;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(12px);
+      box-shadow: var(--shadow);
+    }
+
+    .hero-card h3 {
+      color: var(--white);
+      margin-bottom: 0.45rem;
+    }
+
+    .hero-card p {
+      color: rgba(255, 255, 255, 0.82);
+      font-size: 0.96rem;
+    }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 1rem;
+      margin-top: -2.2rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .metric {
+      padding: 1.3rem 1.1rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      background: var(--white);
+      box-shadow: var(--shadow);
+      text-align: center;
+    }
+
+    .metric strong {
+      display: block;
+      color: var(--navy);
+      font-size: 1.55rem;
+      font-weight: 800;
+    }
+
+    .metric span {
+      display: block;
+      margin-top: 0.35rem;
+      color: var(--slate);
+      font-size: 0.92rem;
+      font-weight: 600;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: 2rem;
+      align-items: start;
+    }
+
+    .panel {
+      padding: 2rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: var(--shadow);
+    }
+
+    .panel p + p {
+      margin-top: 1rem;
+    }
+
+    .logo-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+      align-items: stretch;
+    }
+
+    .logo-card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 116px;
+      padding: 1rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      background: linear-gradient(180deg, #fff, #f7f9fc);
+    }
+
+    .logo-card img {
+      width: 100%;
+      max-height: 76px;
+      object-fit: contain;
+    }
+
+    .services-grid,
+    .box-container {
+      display: grid;
+      gap: 1.2rem;
+    }
+
+    .services-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      margin-top: 1.6rem;
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .service-card {
+      display: flex;
+      gap: 0.9rem;
+      align-items: flex-start;
+      padding: 1.2rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      background: var(--white);
+      box-shadow: var(--shadow);
+    }
+
+    .service-card i {
+      flex: 0 0 auto;
+      margin-top: 0.1rem;
+      color: var(--gold-deep);
+      font-size: 1rem;
+    }
+
+    .service-card span {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    #container .heading {
+      margin-bottom: 0.8rem;
+      text-align: center;
+    }
+
+    .headingp {
+      max-width: 740px;
+      margin: 0 auto 2rem;
+      text-align: center;
+    }
+
+    .box-container {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .box {
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: var(--shadow);
+      transition: transform 0.24s ease, box-shadow 0.24s ease;
+    }
+
+    .box:hover,
+    .box:focus-within {
+      transform: translateY(-4px);
+      box-shadow: 0 22px 40px rgba(11, 31, 59, 0.12);
+    }
+
+    .box a {
+      display: block;
+    }
+
+    .box img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      background: #e8edf4;
+    }
+
+    .box .button {
+      min-height: 88px;
+      padding: 1rem 1.05rem 1.15rem;
+      color: var(--navy);
+      font-weight: 700;
+      font-size: 0.98rem;
+      line-height: 1.45;
+      background: linear-gradient(180deg, #ffffff, #f7f9fd);
+      border-top: 1px solid var(--border);
+    }
+
+    .short-courses {
+      margin-top: 2rem;
+      padding: 2rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: linear-gradient(180deg, #ffffff, #f7f9fc);
+      box-shadow: var(--shadow);
+    }
+
+    .short-courses ul {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.8rem 1.25rem;
+      margin-top: 1rem;
+    }
+
+    .short-courses li {
+      color: var(--ink);
+      font-weight: 500;
+    }
+
+    .news .shell {
+      overflow: hidden;
+    }
+
+    .newsContainer h4,
+    .clients h2 {
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .card-list {
+      padding-bottom: 0.75rem;
+    }
+
+    .card-item {
+      height: auto;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: var(--shadow);
+    }
+
+    .user-image {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+    }
+
+    .card-copy {
+      padding: 1.25rem;
+    }
+
+    .caption {
+      margin-bottom: 0.55rem;
+    }
+
+    .details {
+      display: inline-block;
+      margin-top: 0.45rem;
+      color: var(--navy-soft);
+      font-weight: 600;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: var(--gold);
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      color: var(--navy);
+    }
+
+    .clients-wrap {
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: var(--shadow);
+    }
+
+    .logos {
+      display: flex;
+      width: max-content;
+      animation: marquee 28s linear infinite;
+    }
+
+    .logos:hover {
+      animation-play-state: paused;
+    }
+
+    .logo-slide {
+      display: flex;
+      align-items: center;
+      gap: 1.6rem;
+      padding: 1.25rem 1.6rem;
+    }
+
+    .logo-slide img {
+      width: 140px;
+      height: 72px;
+      object-fit: contain;
+      filter: grayscale(1);
+      opacity: 0.82;
+      transition: filter 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    .logo-slide img:hover {
+      filter: grayscale(0);
+      opacity: 1;
+      transform: translateY(-1px);
+    }
+
+    @keyframes marquee {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-50%);
+      }
+    }
+
+    footer.below {
+      padding: 3rem 0;
+      color: rgba(255, 255, 255, 0.82);
+      background: var(--navy);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(220px, 0.9fr);
+      gap: 2rem;
+    }
+
+    .footer-grid h5 {
+      color: var(--white);
+      margin-bottom: 0.8rem;
+    }
+
+    .address p {
+      color: rgba(255, 255, 255, 0.82);
+    }
+
+    .icons {
+      display: flex;
+      gap: 0.8rem;
+      margin-top: 1rem;
+    }
+
+    .icons a,
+    .icons span {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 50%;
+      color: var(--white);
+    }
+
+    .footer-links {
+      display: grid;
+      gap: 0.55rem;
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .footer-links a {
+      color: rgba(255, 255, 255, 0.82);
+      font-weight: 500;
+    }
+
+    .footer-links a:hover,
+    .footer-links a:focus-visible {
+      color: var(--gold);
+    }
+
+    .footer-note {
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 1100px) {
+      .box-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .services-grid,
+      .short-courses ul {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 920px) {
+      .hero-grid,
+      .split,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .metrics {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .box-container,
+      .logo-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .nav-shell {
+        align-items: center;
+      }
+
+      .menu-toggle,
+      .menu-close {
+        display: inline-flex;
+      }
+
+      .menu-close {
+        align-self: flex-end;
+        margin-bottom: 0.75rem;
+      }
+
+      .nav-links {
+        position: fixed;
+        top: 0;
+        right: -320px;
+        flex-direction: column;
+        align-items: stretch;
+        width: min(300px, 86vw);
+        height: 100vh;
+        padding: 1.25rem 1rem 2rem;
+        background: rgba(11, 31, 59, 0.98);
+        box-shadow: -12px 0 28px rgba(0, 0, 0, 0.2);
+        transition: right 0.28s ease;
+      }
+
+      .nav-links.open {
+        right: 0;
+      }
+
+      .nav-links ul {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .nav-links li a,
+      .nav-cta {
+        width: 100%;
+        justify-content: flex-start;
+      }
+
+      .nav-cta {
+        justify-content: center;
+        margin-top: 0.7rem;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .section {
+        padding: 4rem 0;
+      }
+
+      .hero-grid {
+        padding: 3rem 0 4rem;
+      }
+
+      .services-grid,
+      .box-container,
+      .logo-grid,
+      .short-courses ul,
+      .metrics {
+        grid-template-columns: 1fr;
+      }
+
+      .panel,
+      .short-courses {
+        padding: 1.4rem;
+      }
+
+      .brand img {
+        width: 190px;
+      }
+
+      .logo-slide img {
+        width: 116px;
+        height: 60px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav id="site-nav">
+      <div class="shell nav-shell">
+        <a class="brand" href="#home" aria-label="Limco Consulting and Management home">
+          <img src="C:/Users/B/Downloads/Limco Partner/limco-logo.png" alt="Limco Consulting and Management Pty. Ltd. logo">
+        </a>
+        <button id="menu-open" class="menu-toggle" type="button" aria-label="Open menu">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+        <div class="nav-links" id="navLinks" aria-label="Primary navigation">
+          <button id="menu-close" class="menu-close" type="button" aria-label="Close menu">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </button>
+          <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#statements">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#programmes">Programmes</a></li>
+            <li><a href="#short-courses">Short Courses</a></li>
+            <li><a href="#clients">Clients</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <a class="nav-cta" href="#contact">Apply Now</a>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Accredited Training Institution</span>
+          <h1>Skills Development That Advances Employment, Industry and Public Capacity</h1>
+          <p>
+            Limco Consulting and Management delivers accredited training, learnerships, internships,
+            workplace placements and consulting solutions that support young people, employers,
+            government departments and communities across South Africa.
+          </p>
+          <div class="hero-actions">
+            <a class="btn-link yellow" href="#contact">Apply for a Programme</a>
+            <a class="btn-link ghost" href="#programmes">View Programmes</a>
+          </div>
+        </div>
+        <aside class="hero-aside" aria-label="Institutional highlights">
+          <article class="hero-card">
+            <h3>Founded in 2005</h3>
+            <p>Two decades of delivery in skills development, workplace learning and project implementation.</p>
+          </article>
+          <article class="hero-card">
+            <h3>Government and Industry Aligned</h3>
+            <p>Programmes structured for accredited training, practical exposure and employability outcomes.</p>
+          </article>
+          <article class="hero-card">
+            <h3>National Partnerships</h3>
+            <p>Work undertaken with municipalities, SETAs, corporate partners and sector institutions.</p>
+          </article>
+        </aside>
+      </div>
+    </section>
+  </header>
+
+  <div class="shell metrics" aria-label="Key institutional markers">
+    <article class="metric">
+      <strong>2005</strong>
+      <span>Established</span>
+    </article>
+    <article class="metric">
+      <strong>B-BBEE</strong>
+      <span>Aligned Institution</span>
+    </article>
+    <article class="metric">
+      <strong>Accredited</strong>
+      <span>Training Delivery</span>
+    </article>
+    <article class="metric">
+      <strong>National</strong>
+      <span>Government and Corporate Reach</span>
+    </article>
+  </div>
+
+  <main>
+    <section class="section" id="statements">
+      <div class="shell split">
+        <article class="panel">
+          <span class="eyebrow">About Limco</span>
+          <h2>Who Is Limco Consulting and Management?</h2>
+          <p>
+            Limco Consulting and Management is a 100% Black Economic Empowerment company founded in 2005.
+            The company is led by specialists who are passionate about skills development and institutional delivery.
+          </p>
+          <p>
+            We work with government departments, SETAs, municipalities, public institutions and corporate organisations
+            to reduce unemployment, address scarce skills, strengthen workplace readiness and support long-term economic participation.
+          </p>
+        </article>
+
+        <section class="panel" aria-labelledby="accreditation-heading">
+          <span class="eyebrow">Accreditation</span>
+          <h2 id="accreditation-heading">Institutional and Sector Recognition</h2>
+          <div class="logo-grid">
+            <div class="logo-card"><img src="C:/Users/B/Downloads/Limco Partner/ewseta.png" alt="EWSETA logo" loading="lazy"></div>
+            <div class="logo-card"><img src="C:/Users/B/Downloads/Limco Partner/mictseta.jpg" alt="MICT SETA logo" loading="lazy"></div>
+            <div class="logo-card"><img src="C:/Users/B/Downloads/Limco Partner/SERVICES SETA.jfif" alt="Services SETA logo" loading="lazy"></div>
+            <div class="logo-card"><img src="C:/Users/B/Downloads/Limco Partner/het.png" alt="Higher Education and Training logo" loading="lazy"></div>
+            <div class="logo-card"><img src="C:/Users/B/Downloads/Limco Partner/saqa.png" alt="South African Qualifications Authority logo" loading="lazy"></div>
+            <div class="logo-card"><img src="C:/Users/B/Downloads/Limco Partner/Comptia-partner.png" alt="CompTIA authorized partner logo" loading="lazy"></div>
+            <div class="logo-card"><img src="C:/Users/B/Downloads/Limco Partner/QCTO.jpg" alt="Quality Council for Trades and Occupations logo" loading="lazy"></div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="section alt" id="services">
+      <div class="shell">
+        <span class="eyebrow">Service Offering</span>
+        <h2>Our Services Include</h2>
+        <p>
+          Limco provides integrated training, workplace readiness and consulting services for public and private sector delivery.
+        </p>
+        <ul class="services-grid">
+          <li class="service-card"><i class="fa fa-check-circle" aria-hidden="true"></i><span>Turnkey Training Solutions</span></li>
+          <li class="service-card"><i class="fa fa-check-circle" aria-hidden="true"></i><span>Project Management</span></li>
+          <li class="service-card"><i class="fa fa-check-circle" aria-hidden="true"></i><span>Skills Audit</span></li>
+          <li class="service-card"><i class="fa fa-check-circle" aria-hidden="true"></i><span>Workplace Skills Plan &amp; Annual Training Report</span></li>
+          <li class="service-card"><i class="fa fa-check-circle" aria-hidden="true"></i><span>Quality Management System Development</span></li>
+          <li class="service-card"><i class="fa fa-check-circle" aria-hidden="true"></i><span>Workplace Placements</span></li>
+          <li class="service-card"><i class="fa fa-check-circle" aria-hidden="true"></i><span>Performance Assessments</span></li>
+          <li class="service-card"><i class="fa fa-check-circle" aria-hidden="true"></i><span>Staff Recruitment</span></li>
+          <li class="service-card"><i class="fa fa-check-circle" aria-hidden="true"></i><span>Skills Development Facilitation</span></li>
+          <li class="service-card"><i class="fa fa-check-circle" aria-hidden="true"></i><span>Management Consulting</span></li>
+          <li class="service-card"><i class="fa fa-check-circle" aria-hidden="true"></i><span>Internships</span></li>
+          <li class="service-card"><i class="fa fa-check-circle" aria-hidden="true"></i><span>Learnerships</span></li>
+          <li class="service-card"><i class="fa fa-check-circle" aria-hidden="true"></i><span>Work Integrated Learning (WIL) Programmes</span></li>
+          <li class="service-card"><i class="fa fa-check-circle" aria-hidden="true"></i><span>University &amp; TVET Placements</span></li>
+          <li class="service-card"><i class="fa fa-check-circle" aria-hidden="true"></i><span>Skills Programmes Training</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="programmes">
+      <div class="shell">
+        <section id="container">
+          <div class="container">
+            <h1 class="heading">Training and Development Programmes</h1>
+            <p class="headingp">Upskill yourself with accredited programmes designed for technical capability, workplace readiness and long-term employability.</p>
+            <div class="box-container">
+              <article class="box">
+                <a href="#contact"><img src="C:/Users/B/Downloads/Limco Gallery/24.jpg" alt="End User Computing programme" loading="lazy"></a>
+                <a href="#contact" class="button">End User Computing<br>NQF Level 3</a>
+              </article>
+              <article class="box">
+                <a href="#contact"><img src="C:/Users/B/Downloads/Limco Gallery/30.jpeg" alt="Technical Support programme" loading="lazy"></a>
+                <a href="#contact" class="button">Technical Support<br>NQF Level 4</a>
+              </article>
+              <article class="box">
+                <a href="#contact"><img src="C:/Users/B/Downloads/Limco Gallery/10.jpg" alt="Systems Support programme" loading="lazy"></a>
+                <a href="#contact" class="button">Systems Support<br>NQF Level 5</a>
+              </article>
+              <article class="box">
+                <a href="#contact"><img src="C:/Users/B/Downloads/Limco Gallery/41.jpeg" alt="Systems Development NQF Level 4 programme" loading="lazy"></a>
+                <a href="#contact" class="button">Systems Development<br>NQF Level 4</a>
+              </article>
+              <article class="box">
+                <a href="#contact"><img src="C:/Users/B/Downloads/Limco Gallery/42.jpeg" alt="Systems Development NQF Level 5 programme" loading="lazy"></a>
+                <a href="#contact" class="button">Systems Development<br>NQF Level 5</a>
+              </article>
+              <article class="box">
+                <a href="#contact"><img src="C:/Users/B/Downloads/Limco Gallery/47.jpeg" alt="Software Engineer programme" loading="lazy"></a>
+                <a href="#contact" class="button">Software Engineer<br>NQF Level 6</a>
+              </article>
+              <article class="box">
+                <a href="#contact"><img src="C:/Users/B/Downloads/Limco Gallery/48.jpeg" alt="Software Developer programme" loading="lazy"></a>
+                <a href="#contact" class="button">Software Developer<br>NQF Level 5</a>
+              </article>
+              <article class="box">
+                <a href="#contact"><img src="C:/Users/B/Downloads/Limco Gallery/49.jpeg" alt="Cloud Administrator programme" loading="lazy"></a>
+                <a href="#contact" class="button">Cloud Administrator<br>NQF Level 4</a>
+              </article>
+              <article class="box">
+                <a href="#contact"><img src="C:/Users/B/Downloads/Limco Gallery/27.jpg" alt="Telecommunications Cable Joiner programme" loading="lazy"></a>
+                <a href="#contact" class="button">Telecommunications Cable Joiner<br>NQF Level 3</a>
+              </article>
+              <article class="box">
+                <a href="#contact"><img src="C:/Users/B/Downloads/Limco Gallery/IMG_2288.jpg" alt="Cybersecurity Analyst programme" loading="lazy"></a>
+                <a href="#contact" class="button">Cybersecurity Analyst<br>NQF Level 5</a>
+              </article>
+              <article class="box">
+                <a href="#contact"><img src="C:/Users/B/Downloads/Limco Gallery/9.jpg" alt="Computer Technician programme" loading="lazy"></a>
+                <a href="#contact" class="button">Computer Technician<br>NQF Level 5</a>
+              </article>
+              <article class="box">
+                <a href="#contact"><img src="C:/Users/B/Downloads/Limco Gallery/12.jpg" alt="Internet of Things Developer programme" loading="lazy"></a>
+                <a href="#contact" class="button">Internet-of-Things Developer<br>NQF Level 4</a>
+              </article>
+              <article class="box">
+                <a href="#contact"><img src="C:/Users/B/Downloads/Limco Gallery/13.jpg" alt="Artificial Intelligence Software Developer programme" loading="lazy"></a>
+                <a href="#contact" class="button">Artificial Intelligence Software Developer<br>NQF Level 6</a>
+              </article>
+              <article class="box">
+                <a href="#contact"><img src="C:/Users/B/Downloads/Limco Gallery/14.jpg" alt="Data Science Practitioner programme" loading="lazy"></a>
+                <a href="#contact" class="button">Data Science Practitioner<br>NQF Level 5</a>
+              </article>
+              <article class="box">
+                <a href="#contact"><img src="C:/Users/B/Downloads/Limco Gallery/IMG_1953.jpg" alt="Film and Television Production Operations programme" loading="lazy"></a>
+                <a href="#contact" class="button">Film &amp; Television Production Operations<br>NQF Level 4</a>
+              </article>
+              <article class="box">
+                <a href="#contact"><img src="C:/Users/B/Downloads/Limco Gallery/IMG_1874.jpg" alt="Film and Television Production programme" loading="lazy"></a>
+                <a href="#contact" class="button">Film &amp; Television Production<br>NQF Level 5</a>
+              </article>
+              <article class="box">
+                <a href="#contact"><img src="C:/Users/B/Downloads/Limco Gallery/17.jpg" alt="Business Administration Services programme" loading="lazy"></a>
+                <a href="#contact" class="button">Business Administration Services<br>NQF Level 4</a>
+              </article>
+              <article class="box">
+                <a href="#contact"><img src="C:/Users/B/Downloads/Limco Gallery/18.jpg" alt="New Venture Creation NQF Level 4 programme" loading="lazy"></a>
+                <a href="#contact" class="button">New Venture Creation<br>NQF Level 4</a>
+              </article>
+              <article class="box">
+                <a href="#contact"><img src="C:/Users/B/Downloads/Limco Gallery/20.jpg" alt="New Venture Creation NQF Level 2 programme" loading="lazy"></a>
+                <a href="#contact" class="button">New Venture Creation<br>NQF Level 2</a>
+              </article>
+              <article class="box">
+                <a href="#contact"><img src="C:/Users/B/Downloads/Limco Gallery/21.jpg" alt="Contact Centre Support programme" loading="lazy"></a>
+                <a href="#contact" class="button">Contact Centre Support<br>NQF Level 2</a>
+              </article>
+              <article class="box">
+                <a href="#contact">
+                  <img src="C:/Users/B/Downloads/Limco Gallery/IMG_3130.jpg" alt="Generic Management NQF Level 4 programme" loading="lazy">
+                  <span class="button">Generic Management<br>NQF Level 4</span>
+                </a>
+              </article>
+              <article class="box">
+                <a href="#contact">
+                  <img src="C:/Users/B/Downloads/Limco Gallery/IMG_3123.jpg" alt="Generic Management NQF Level 5 programme" loading="lazy">
+                  <span class="button">Generic Management<br>NQF Level 5</span>
+                </a>
+              </article>
+              <article class="box">
+                <a href="#contact"><img src="C:/Users/B/Downloads/Limco Gallery/22.jpg" alt="Project Management programme" loading="lazy"></a>
+                <a href="#contact" class="button">Project Management<br>NQF Level 4</a>
+              </article>
+              <article class="box">
+                <a href="#short-courses"><img src="C:/Users/B/Downloads/Limco Gallery/23.jpg" alt="Short courses" loading="lazy"></a>
+                <a href="#short-courses" class="button">Short Courses</a>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="short-courses" id="short-courses" aria-labelledby="short-courses-heading">
+          <span class="eyebrow">Short Courses</span>
+          <h2 id="short-courses-heading">Industry-Relevant Short Course Options</h2>
+          <p>Short courses support employers, job seekers and teams needing practical, targeted upskilling.</p>
+          <ul>
+            <li>Microsoft Office Suite</li>
+            <li>CompTIA A+</li>
+            <li>CompTIA N+</li>
+            <li>Information &amp; Communication Technology Networks</li>
+            <li>Report Writing</li>
+            <li>How to Develop a Business Plan</li>
+            <li>Developing a Winning Tender</li>
+            <li>Finance for Non-Financial Managers</li>
+            <li>Time Management</li>
+          </ul>
+        </section>
+      </div>
+    </section>
+
+    <section class="section alt news" id="news">
+      <div class="shell">
+        <div class="newsContainer swiper">
+          <h4>News and Updates</h4>
+          <div class="slider-wrapper">
+            <div class="card-list swiper-wrapper">
+              <article class="card-item swiper-slide">
+                <img src="C:/Users/B/Downloads/Limco Gallery/26.jpg" alt="Graduation ceremony with Vuma learners" class="user-image" loading="lazy">
+                <div class="card-copy">
+                  <h5 class="caption">Graduation and workplace transition support</h5>
+                  <a class="details" href="#programmes">Learners continue to progress from structured training into workplace and industry opportunities.</a>
+                </div>
+              </article>
+              <article class="card-item swiper-slide">
+                <img src="C:/Users/B/Downloads/Limco Gallery/30.jpeg" alt="Technology training session with learners" class="user-image" loading="lazy">
+                <div class="card-copy">
+                  <h5 class="caption">Hands-on digital skills training</h5>
+                  <a class="details" href="#services">Programmes are delivered with practical exposure that supports job readiness and competence.</a>
+                </div>
+              </article>
+              <article class="card-item swiper-slide">
+                <img src="C:/Users/B/Downloads/Limco Gallery/25.jpg" alt="Work integrated learning cohort graduation" class="user-image" loading="lazy">
+                <div class="card-copy">
+                  <h5 class="caption">Municipal partnership outcomes</h5>
+                  <a class="details" href="#clients">Public sector collaboration remains central to sustainable skills development delivery.</a>
+                </div>
+              </article>
+              <article class="card-item swiper-slide">
+                <img src="C:/Users/B/Downloads/Limco Gallery/44.jpeg" alt="Career Town certification moment" class="user-image" loading="lazy">
+                <div class="card-copy">
+                  <h5 class="caption">Certification and completion milestones</h5>
+                  <a class="details" href="#statements">Learner achievements remain at the centre of our institutional work.</a>
+                </div>
+              </article>
+              <article class="card-item swiper-slide">
+                <img src="C:/Users/B/Downloads/Limco Gallery/45.jpeg" alt="Large graduation group" class="user-image" loading="lazy">
+                <div class="card-copy">
+                  <h5 class="caption">Employer-facing training outcomes</h5>
+                  <a class="details" href="#short-courses">Delivery covers learnerships, internships, workplace placements and short course interventions.</a>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-slide-button swiper-button-prev"></div>
+            <div class="swiper-slide-button swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section clients" id="clients">
+      <div class="shell">
+        <h2>Our Clients and Partners</h2>
+        <div class="clients-wrap">
+          <div class="logos" aria-label="Partner logos">
+            <div class="logo-slide">
+              <img src="C:/Users/B/Downloads/Limco Partner/MTN.png" alt="MTN logo" loading="lazy">
+              <img src="C:/Users/B/Downloads/Limco Partner/CUEINCIDENT.jfif" alt="Cue Incident logo" loading="lazy">
+              <img src="C:/Users/B/Downloads/Limco Partner/GAUTENG PROVINCIAL GOVERNMENT.png" alt="Gauteng Provincial Government logo" loading="lazy">
+              <img src="C:/Users/B/Downloads/Limco Partner/multichoice-logo.png" alt="MultiChoice logo" loading="lazy">
+              <img src="C:/Users/B/Downloads/Limco Partner/CELL C.png" alt="Cell C logo" loading="lazy">
+              <img src="C:/Users/B/Downloads/Limco Partner/NUCTECH.png" alt="Nuctech logo" loading="lazy">
+              <img src="C:/Users/B/Downloads/Limco Partner/SABC.png" alt="SABC logo" loading="lazy">
+              <img src="C:/Users/B/Downloads/Limco Partner/Vuma-new-logo.jpg" alt="Vuma logo" loading="lazy">
+              <img src="C:/Users/B/Downloads/Limco Partner/MPUMALANGA.png" alt="Mpumalanga logo" loading="lazy">
+              <img src="C:/Users/B/Downloads/Limco Partner/nkangala-district-municipality_2_orig.png" alt="Nkangala District Municipality logo" loading="lazy">
+              <img src="C:/Users/B/Downloads/Limco Partner/ethekwini-municipality.png" alt="eThekwini Municipality logo" loading="lazy">
+              <img src="C:/Users/B/Downloads/Limco Partner/VICTOR.jfif" alt="Victor Khanye Local Municipality logo" loading="lazy">
+              <img src="C:/Users/B/Downloads/Limco Partner/SERVICES SETA.jfif" alt="Services SETA logo" loading="lazy">
+            </div>
+            <div class="logo-slide" aria-hidden="true">
+              <img src="C:/Users/B/Downloads/Limco Partner/MTN.png" alt="" loading="lazy">
+              <img src="C:/Users/B/Downloads/Limco Partner/CUEINCIDENT.jfif" alt="" loading="lazy">
+              <img src="C:/Users/B/Downloads/Limco Partner/GAUTENG PROVINCIAL GOVERNMENT.png" alt="" loading="lazy">
+              <img src="C:/Users/B/Downloads/Limco Partner/multichoice-logo.png" alt="" loading="lazy">
+              <img src="C:/Users/B/Downloads/Limco Partner/CELL C.png" alt="" loading="lazy">
+              <img src="C:/Users/B/Downloads/Limco Partner/NUCTECH.png" alt="" loading="lazy">
+              <img src="C:/Users/B/Downloads/Limco Partner/SABC.png" alt="" loading="lazy">
+              <img src="C:/Users/B/Downloads/Limco Partner/Vuma-new-logo.jpg" alt="" loading="lazy">
+              <img src="C:/Users/B/Downloads/Limco Partner/MPUMALANGA.png" alt="" loading="lazy">
+              <img src="C:/Users/B/Downloads/Limco Partner/nkangala-district-municipality_2_orig.png" alt="" loading="lazy">
+              <img src="C:/Users/B/Downloads/Limco Partner/ethekwini-municipality.png" alt="" loading="lazy">
+              <img src="C:/Users/B/Downloads/Limco Partner/VICTOR.jfif" alt="" loading="lazy">
+              <img src="C:/Users/B/Downloads/Limco Partner/SERVICES SETA.jfif" alt="" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="below" id="contact">
+    <div class="shell">
+      <div class="footer-grid">
+        <div class="address">
+          <h5>Limco Consulting and Management Pty Ltd</h5>
+          <p>
+            20 Birmingham Road, Benoni South, Benoni 1501<br>
+            Johannesburg, South Africa<br>
+            Tel: 084 425 6998 / 011 945 4065<br>
+            Fax: 086 543 5301
+          </p>
+          <div class="icons">
+            <a href="https://www.facebook.com/p/Limco-Consulting-and-Management-Pty-Ltd-100054248601859/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <span aria-label="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></span>
+            <span aria-label="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+          </div>
+        </div>
+        <div>
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#statements">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#programmes">Programmes</a></li>
+            <li><a href="#short-courses">Short Courses</a></li>
+            <li><a href="#contact">Apply</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-note">Copyright &copy; 2026 Limco Consulting and Management Pty Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    (function () {
+      var navLinks = document.getElementById("navLinks");
+      var menuOpen = document.getElementById("menu-open");
+      var menuClose = document.getElementById("menu-close");
+      var navAnchors = navLinks.querySelectorAll("a");
+
+      function showMenu() {
+        navLinks.classList.add("open");
+        navLinks.setAttribute("aria-hidden", "false");
+      }
+
+      function hideMenu() {
+        navLinks.classList.remove("open");
+        navLinks.setAttribute("aria-hidden", "true");
+      }
+
+      window.showMenu = showMenu;
+      window.hideMenu = hideMenu;
+
+      menuOpen.addEventListener("click", showMenu);
+      menuClose.addEventListener("click", hideMenu);
+
+      navAnchors.forEach(function (anchor) {
+        anchor.addEventListener("click", hideMenu);
+      });
+
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+          hideMenu();
+        }
+      });
+
+      $(window).on("scroll", function () {
+        if ($(window).scrollTop() > 12) {
+          $("#site-nav").addClass("black");
+        } else {
+          $("#site-nav").removeClass("black");
+        }
+      });
+
+      new Swiper(".newsContainer", {
+        loop: true,
+        spaceBetween: 24,
+        grabCursor: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1
+          },
+          700: {
+            slidesPerView: 2
+          },
+          1100: {
+            slidesPerView: 3
+          }
+        }
+      });
+    }());
+  </script>
+</body>
+</html>
